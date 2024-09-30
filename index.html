@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Portefolio</title>
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <div class="boxed">
             <div class="flex aligncenter space-between">
@@ -15,112 +16,118 @@
                     <span class="material-symbols-outlined">menu</span>
                 </button>
                 <a href="/" class="header-logo">
-                    <img src="assets/images/logo.JPG" alt="">
+                    <img src="assets/images/main-images/logo.png" alt="Logo du site">
                 </a>
                 <ul class="header-menu">
                     <li> <a href="/">Accueil</a></li>
-                    <li> <a href="/">A propos</a></li>
-                    <li> <a href="/">Mes réalisation </a></li>
-                    <li> <a href="/">Centre d'interet</a></li>
-                    <li> <a href="/">Contact</a></li>
+                    <li> <a href="#a-propos">A propos</a></li>
+                    <li> <a href="#realisation">Mes réalisation </a></li>
+                    <li> <a href="#centre-interet">Centre d'interet</a></li>
+                    <li> <a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
-        <div class="slider">
-            <img src="assets/images/fond.png" class="silder-background" alt="carte fond">
-            <div class="slider-content">
-                <h1> RIDJALI Hassani</h1>
-                <p> je suis geographe</p>
-            </div>
-            <img src="assets/images/profil.jpg" class="img-profil" alt="">
+    <!-- Profil -->
+    <div class="slider">
+        <img src="assets/images/main-images/fond.jpg" class="silder-background" alt="carte fond">
+        <div class="slider-content">
+            <h1>Portefolio</h1>
+            <h1> RIDJALI Hassani</h1>
+            <p> Etudiant en Master 2 géographie numerique </p>
         </div>
-        <div class="section">
-            <div class="boxed">
-                <div class="flex toColumn mCenter">
-                    <div class="w40 wm100">
-                        <h2>A propos de moi </h2>
-                    </div>
-                    <div class="W60 wm100">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas, reprehenderit placeat ratione accusantium natus, distinctio omnis, labore hic dicta voluptas vel! Saepe, molestiae earum. Iure commodi unde magnam tempore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Mes réalisation -->
-        <div class="section dark">
-            <div class="boxed texte-center">
-                <h2>Découvrez mes réalisation </h2>
-                <div class="flex wrap gap20 space-between">
-                    <div class="w32 wm47 realisation">
-                        <a href="/">
-                            <img src="assets/images/real.png" alt="carte ">
-                            <h3 class="bull"> Chambre de l'agriculture</h3>
-                        </a>
-                    </div>
-                    <div class="w32 wm47 realisation">
-                        <a href="/">
-                            <img src="assets/images/real.png" alt="carte ">
-                        </a>
-                    </div>
-                    <div class="w32 wm47 realisation">
-                        <a href="/">
-                            <img src="assets/images/real.png" alt="carte ">
-                        </a>
-                    </div>
-                    <div class="w32 wm47 realisation">
-                        <a href="/">
-                            <img src="assets/images/real.png" alt="carte ">
-                        </a>
-                    </div>
-                    <div class="w32 wm47 realisation">
-                        <a href="/">
-                            <img src="assets/images/real.png" alt="carte ">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <!-- Centre d'interet  -->
-        <div class="section dark">
-            <div class="boxed texte-center ">
-                <h2>Centre d'intéret </h2>
-                <p>Voici quelque un de mes travaux réaliser dans le cadre de ma formation.</p>
-                <div class="flex toColumn gap20">
-                    <div class="w25 wm100 skill ">
-                        <img src="assets/images/dessin.jpg" alt="">
-                        <h3> Créativité</h3>
-                    </div>
-                    <div class="w25 wm100 skill ">
-                        <img src="assets/images/dessin.jpg" alt="">
-                        <h3> Vidéo</h3>
-                    </div>
-                    <div class="w25 wm100 skill ">
-                        <img src="assets/images/dessin.jpg" alt="">
-                        <h3> Modélisation</h3>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="section dark">
-            <div class="boxed texte-center ">
-                <h2>Contactez-moi</h2>
-                <div class="flex toColumn space-between">
-                    <div class="w32 wm100 contact" >
-                        <span class="material-symbols-outlined icon">mail</span>
-                        <span class="label"> E-mail</span>
-                        <span class="value"> teste@test.com</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-            
-    
+        <img src="assets/images/main-images/profil.jpg" class="img-profil" alt="">
     </div>
+    <!-- A propos de moi  -->
+    <div id="a-propos" class="section">
+        <div class="boxed">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
+                    <h2>A propos de moi </h2>
+                </div>
+                <div class="W60 wm100">
+                    <p> Mon objectif professionnel est de devenir géomaticien. Pour atteindre cet objectif, je suis déterminé à mettre en œuvre toutes les compétences que j'ai acquises au cours de mon cursus scolaire.
+                        Je m’intéresse tout particulièrement aux  domaines de l’aménagement, à l'élaboration de projets et à la modélisation informatique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mes réalisation -->
+    <div id="realisation" class="section dark">
+        <div class="boxed texte-center">
+            <h2>Découvrez mes réalisation </h2>
+            <div class="flex wrap gap20 space-between">
+                <div class="w32 wm47 realisation">
+                    <a href="realisations/realisation1.html">
+                        <img src="assets/images/stage/stage_1.png" alt="carte ">
+                        <h3 class="bull"> Stage - carte web</h3>
+                    </a>
+                </div>
+                <div class="w32 wm47 realisation">
+                    <a href="/">
+                        <img src="assets/images/fme/fme_1.png" alt="carte ">
+                        <h3 class="bull"> Projet FME</h3>
+                    </a>
+                </div>
+                <div class="w32 wm47 realisation">
+                    <a href="/">
+                        <img src="assets/images/chambre-agriculture/agri_3.png" alt="carte ">
+                        <h3 class="bull"> Projet chambre d'agriculture</h3>
+                    </a>
+                </div>
+                <div class="w32 wm47 realisation">
+                    <a href="/">
+                        <img src="assets/images/analyse-spatial/as_4.png" alt="carte ">
+                        <h3 class="bull"> Analyse spatial</h3>
+                    </a>
+                </div>
+                <div class="w32 wm47 realisation">
+                    <a href="/">
+                        <img src="assets/images/etude-impact/impact_1.png" alt="carte ">
+                        <h3 class="bull"> Etude d'impact</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Centre d'interet  -->
+    <div id="centre-interet" class="section dark">
+        <div class="boxed texte-center ">
+            <h2>Centre d'intéret </h2>
+            <p>Voici quelque un de mes travaux réaliser dans le cadre de ma formation.</p>
+            <div class="flex toColumn gap20">
+                <div class="w25 wm100 skill ">
+                    <img src="assets/images/interet/dessin.PNG" alt="">
+                    <h3> Créativité</h3>
+                </div>
+                <div class="w25 wm100 skill ">
+                    <img src="assets/images/interet/dessin2.jpg" alt="">
+                    <h3> Vidéo</h3>
+                </div>
+                <div class="w25 wm100 skill ">
+                    <img src="assets/images/interet/modelisation.JPG" alt="">
+                    <h3> Modélisation</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact  -->
+    <div id="contact" class="section dark">
+        <div class="boxed texte-center ">
+            <h2>Contactez-moi</h2>
+            <div class="flex toColumn space-between">
+                <div class="w32 wm100 contact" >
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <span class="label"> E-mail</span>
+                    <span class="value"> teste@test.com</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        
 
     <script src="js/app.js"></script>
 </body>
