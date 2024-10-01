@@ -347,6 +347,7 @@ header {
     
     .wm100 {
         width:100% !important;
+        margin-top: 20px;
     }
 
     .wm47 {
@@ -360,4 +361,5 @@ header {
     .boxed {
         max-width: 90%;
     }
+
 }
