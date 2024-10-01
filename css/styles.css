@@ -69,7 +69,10 @@ p {
 }
 
 .section {
-    padding: 100px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 0px;
+    padding-left: 0;
 }
 
 .boxed {
@@ -190,12 +193,12 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     margin: 10px;
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
 }
 
 .value {
     display: block;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
 }
 
 .contact {
@@ -244,15 +247,42 @@ header {
 }
 
 .header-menu a:hover {
-    background-color: #f2f2f2;
+    background-color: #3333;
+    border-radius: 10px;
 }
 
 .header-menu li:last-child a {
     background-color: green;
+    color: #FFF;
 }
 
 .header-menu-mobile{
     display: none;
+}
+
+.competances{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.competances a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    box-sizing: border-box;
+    transition: .2s ease;
+    padding: 5px;
+    padding-right: 5px;
+    
+}
+
+.competances li {
+    background-color: green;
+    color: #FFF;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 /* Version mobile  */
@@ -308,6 +338,18 @@ header {
         z-index: 991;
     }
 
+    .competances{
+        display: flex;
+        list-style: none;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items:self-start;
+    }
+
+    .competances li {
+        margin-bottom: 10px;
+    }
+
     .slider{
         height: 50vh;
     }
@@ -315,6 +357,11 @@ header {
     .slider-content {
         width: 50%;
 
+    }
+
+    .competances li {
+        font-size: 0.7rem;
+        text-wrap: balance;
     }
 
     .slider-content p {

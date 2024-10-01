@@ -3,11 +3,28 @@
     justify-content: center;
 }
 
+.titre-real {
+    margin-top: 50px;
+}
 .galerie {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 35px;
+    margin-top: 0;
+}
+
+.ligne{
+    border-bottom: 2px solid #fff; 
+    padding-bottom: 40px; 
+    margin-bottom: 20px; 
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#realisation h2 {
+    margin-top: 10px !important;
 }
 
 .wrapper{
@@ -48,7 +65,6 @@
     scroll-snap-type:  x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: 0;
-
 }
 
 .carousel :where(.card, .img) {
@@ -70,7 +86,6 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-
 }
 
 .card .img {
@@ -83,6 +98,15 @@
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.list-skill{
+    margin-top: 20px;
+}
+.list-skill li {
+    list-style:circle;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 /* Version mobile  */
