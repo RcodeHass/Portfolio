@@ -97,6 +97,7 @@ p {
 
 .w40 {
     width: 40%;
+    margin-right: 10px;
 }
 
 .w60 {
@@ -131,16 +132,23 @@ p {
 .skill {
     background: #333;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
+    /* max-width: 200px; */
+    width: 400px;
+    max-height: 200px;
+    margin-bottom: 40px;
 }
 
 .skill img {
 
-    width: 200px;
-    max-height: 100px;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
     aspect-ratio: 1px /1px;
-    object-fit: contain;
+    object-fit: cover; /* Redimensionne et coupe les images pour qu'elles remplissent le cadre */
+    object-position: center;
+    border-radius: 50%;
 }
 
 .skill h3 {
@@ -204,8 +212,15 @@ p {
 .contact {
     border: 2px dashed #FFF;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
+    width: auto;
+    margin: 10px;
+}
+
+.contact-align{
+    justify-content: center;
+    
 }
 
 .aligncenter{
@@ -370,13 +385,27 @@ header {
         text-wrap: balance;
     }
 
+    .skill {
+        width: 47%; /* Deux éléments par ligne */
+        height: 100px;
+    }
+
+    .skill img {
+        max-width: 100px;
+    }
+
+
     h1 {
         font-size: 1.5rem;
     }
 
     h2{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-bottom: 30px;
+    }
+
+    h3{
+        font-size: 1.2rem;
     }
     p{
         font-size: 1rem;
@@ -407,6 +436,24 @@ header {
 
     .boxed {
         max-width: 90%;
+    }
+
+    .icon {
+        display: block;
+        font-size: 30px !important;
+    }
+    
+    .label {
+        display: block;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .value {
+        display: block;
+        font-size: 1rem;
     }
 
 }
