@@ -1,5 +1,4 @@
 #realisation {
-    text-align: center;
     justify-content: center;
 }
 
@@ -100,9 +99,13 @@
     border-radius: 8px;
 }
 
-.list-skill{
-    margin-top: 20px;
+.list-skill {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
 }
+
 .list-skill li {
     list-style:circle;
     margin-top: 10px;
