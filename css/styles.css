@@ -218,7 +218,7 @@ p {
     border-radius: 15px;
     padding: 10px;
     box-sizing: border-box;
-    width: auto;
+    width: 30vh;
     margin: 10px;
 }
 
@@ -458,6 +458,10 @@ header {
     .value {
         display: block;
         font-size: 1rem;
+    }
+
+    .contact {
+        width: auto;
     }
 
 }
