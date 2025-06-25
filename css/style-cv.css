@@ -1,0 +1,150 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+body {
+    font-family: 'Inter', poppins;
+    margin: 0;
+    background-color: black;
+}
+
+
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p{
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    
+}
+
+/* CSS Slider */
+
+#slider-image{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+/* Configuration de la carte  */
+#map {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: 5px;
+}
+
+
+:root .cv {
+    --primary: #004080a9;
+    --secondary: #e6f0ff;
+    --accent: #99d6f5;
+    --text: #333;
+    --bg: #fff;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cv {
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--bg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 0px;
+}
+.left {
+    background: #e4e4e5;
+    width: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #ccc;
+}
+.right {
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #221f21;
+}
+.cv h2 {
+    font-size: 1.1em;
+    background: var(--accent);
+    color: rgb(26, 26, 26);
+    padding: 5px 10px;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+.section {
+    margin-bottom: 20px;
+}
+.contact i, .section i {
+    width: 20px;
+    margin-right: 10px;
+    color: var(--primary);
+}
+.contact p {
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+}
+.info-title {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.6);
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.job-title {
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 10px;
+}
+
+#exp-archives:hover,
+#form-lyon2:hover,
+#form-lorraine:hover,
+#form-eiffel:hover,
+#form-bac:hover,
+#exp-tp:hover,
+#exp-annim:hover
+ {
+  background-color: #e0f0ff;
+  transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 600px) {
+  body, p, li, h1, h2, h3 {
+    font-size: 0.85rem !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .cv {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .info-title {
+    font-size: 1rem;
+  }
+}

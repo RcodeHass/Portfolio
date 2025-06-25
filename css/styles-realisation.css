@@ -112,6 +112,50 @@
     font-size: 1rem;
 }
 
+#map {
+    position: relative;
+   width: 500px;
+   height: 500px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #ebe8e8;
+}
+/* .section {
+    margin-bottom: 20px;
+} */
+.section-title {
+    border-bottom: 2px solid #0077cc;
+    margin-bottom: 10px;
+}
+ul {
+    padding-left: 20px;
+}
+.two-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 1 1 45%;
+}
+.contact-info {
+    font-size: 0.9em;
+}
+
 /* Version mobile  */
 @media screen and (max-width:  900px) {
 
