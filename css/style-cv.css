@@ -1,22 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
-body {
-    font-family: 'Inter', poppins;
-    margin: 0;
-    background-color: black;
-}
-
-
-
-body {
-  font-family: "Ubuntu", sans-serif;
-}
-
-p{
-    margin: 0;
-    font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    
-}
 
 /* CSS Slider */
 
@@ -35,9 +16,9 @@ p{
 
 
 :root .cv {
-    --primary: #004080a9;
+    --primary: #03642ea8;
     --secondary: #e6f0ff;
-    --accent: #99d6f5;
+    --accent: #98ccb6;
     --text: #333;
     --bg: #fff;
 }
@@ -56,17 +37,26 @@ body {
     padding: 0px;
 }
 .left {
-    background: #e4e4e5;
+    background: #94b894;
     width: 35%;
     padding: 20px;
     box-sizing: border-box;
     border-right: 2px solid #ccc;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .right {
     width: 65%;
     padding: 20px;
     box-sizing: border-box;
 }
+.right p {
+    color: #252525;
+}
+.right ul li {
+    color: #000;
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 0;
@@ -93,6 +83,13 @@ h1 {
     display: flex;
     align-items: center;
 }
+
+.competences p i {
+    width: 20px;
+    margin-right: 10px;
+    color: var(--primary);
+}
+
 .info-title {
     background: var(--primary);
     color: white;

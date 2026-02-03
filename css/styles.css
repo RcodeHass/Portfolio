@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    font-family: "Inter", sans-serif;
-   
-}
-
+/* ============ STYLES PRESENTATION ============ */
 link[rel="shortcut icon"] {
     pointer-events: none;
 }
@@ -27,12 +13,14 @@ link[rel="shortcut icon"] {
     aspect-ratio: 16/9;
     background: #000;
     position: relative;
+    z-index: 1;
 }
 .silder-background {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(50%);
+    margin-bottom: 50px;
 }
 
 .slider-content {
@@ -49,15 +37,6 @@ h1 {
     font-size: 3rem;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 50px;
-}
-
-p {
-    font-size: 1.5rem;
-    line-height: 1.5em;
-}
 .slider-content p{
     font-size: 1.5rem;
     font-weight: 300;
@@ -71,316 +50,6 @@ p {
     border-radius: 80px;
     right: 10%;
 }
-
-.section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 0px;
-    padding-left: 0;
-}
-
-.boxed {
-    max-width: 1280px;
-    margin-inline: auto;
-}
-
-.flex {
-    display: flex;
-    
-}
-
-.dark {
-    background: #000;
-    color: #FFF;
-}
-.bull {
-    background-color: #333;
-    border-radius: 10px;
-
-}
-
-.w40 {
-    width: 40%;
-    margin-right: 10px;
-}
-
-.w60 {
-    width: 60%;
-}
-
-.texte-center {
-    text-align: center;
-}
-
-.w32 {
-    width: 32%;
-}
-
-.w25 {
-    width: 25%;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.gap20 {
-    gap: 20px;
-}
-
-.wrap {
-    flex-wrap: wrap;
-    
-}
-
-
-
-.skill {
-    background: #333;
-    border-radius: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-    /* max-width: 200px; */
-    width: 400px;
-    max-height: 400px;
-    margin-bottom: 40px;
-}
-
-.skill img {
-
-    width: 100%;
-    max-width: 200px;
-    height: 100%;
-    aspect-ratio: 1px /1px;
-    object-fit: cover; /* Redimensionne et coupe les images pour qu'elles remplissent le cadre */
-    object-position: center;
-    border-radius: 50%;
-}
-
-.skill h3 {
-    margin-top: 10px;
-}
-
-.modal-centered-fixed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80vw;
-  max-width: 80vw;
-  margin: auto;
-  padding-top: 10%;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-.modal-centered-fixed .modal-content {
-  width: 100%;
-  max-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-
-/* Zone image carousel */
-.modal-centered-fixed .modal-body {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.carousel-item {
-  transition: none !important;
-}
-
-
-/* Style nav bar */
-/* Style général des liens du menu */
-.navbar-nav .nav-link {
-  transition: color 2s ease;
-}
-
-/* Hover pour tous les liens SAUF le bouton Contact */
-.navbar-nav .nav-link:not(.contact-btn):hover {
-  color: #000 !important;
-  background-color: #3333;
-  border-radius: 8px;
-}
-
-.contact-btn:hover {
-  border-radius: 8px;
-}
-
-/* Style spécifique au bouton Contact */
-.contact-btn {
-  background-color: green;
-  color: white !important;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: none; /* pas d'effet de transition */
-}
-
-
-
-.realisation {
-    height: auto;
-    aspect-ratio: 1/1;
-    position: relative;
-}
-
-.realisation h3 {
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    padding: 5px;
-    /* transform: translate(-50%, -50%); */
-    max-width: fit-content;
-
-}
-.realisation a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.realisation img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    filter:  brightness(45%);
-    transition: ease;
-}
-
-.realisation:hover img {
-    filter: brightness(60%);
-}
-
-.icon {
-    display: block;
-    font-size: 40px !important;
-}
-
-.label {
-    display: block;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 10px;
-    font-size: 1.5rem;
-}
-
-.value {
-    display: block;
-    font-size: 1.2rem;
-}
-
-.contact {
-    border: 2px dashed #FFF;
-    border-radius: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 30vh;
-    margin: 10px;
-}
-
-.contact-align{
-    justify-content: center;
-    
-}
-
-.aligncenter{
-    align-items: center;
-}
-
-/* Navigation  */
-nav.navbar {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-}
-
-nav.navbar a {
-  text-decoration: none;
-  color: #f2f1f1;
-  padding: 10px 20px;
-  transition: 0.2s ease;
-  font-size: larger;
-}
-
-.theme-color {
-  background-color: rgb(255, 255, 255);
-}
-
-#logo {
-  height: 5vh;
-  border-radius: 50%;
-}
-
-/* Réduit la taille du titre */
-.navbar-brand h2 {
-  font-size: 1.2rem; /* ou utilise une classe comme fs-5 */
-  margin-bottom: 0;
-}
-
-/* Réduit l'espacement vertical des liens */
-.nav-link {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-
-/* Header */
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #FFF;
-    z-index: 999;
-    padding-block: 5px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.7);
-} */
-
-.header-logo {
-    display: block;
-}
-
-.header-logo img {
-    width: 60px;
-}
-
-/* .header-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.header-menu a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px 20px;
-    display: block;
-    box-sizing: border-box;
-    transition: .2s ease;
-}
-
-.header-menu a:hover {
-    background-color: #3333;
-    border-radius: 10px;
-}
-
-.header-menu li:last-child a {
-    background-color: green;
-    color: #FFF;
-}
-
-.header-menu-mobile{
-    display: none;
-} */
 
 .competances{
     display: flex;
@@ -407,181 +76,109 @@ nav.navbar a {
     margin-right: 10px;
 }
 
-/* Version mobile  */
-@media (max-width:  810px) {
-
-    header {
-        height: 60px;
-    }
-    .header-logo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 991;
-    }
-
-
-    .header-logo img {
-        border-radius: 100px;
-        
-    }
-
-    .header-menu{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: #FFF;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        display: none;
-    }
-
-    .header-menu li:last-child a {
-        padding-top: 10px;
-    }
-
-    .activ {
-        display: flex;
-    }
-
-    .header-menu-mobile{
-        display: block;
-        border: 0px;
-        background-color: #FFF;
-        position: absolute;
-        left: 5%;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 991;
-    }
-
-    .competances{
-        display: flex;
-        list-style: none;
-        margin-top: 10px;
-        flex-direction: column;
-        align-items:self-start;
-    }
-
-    .competances li {
-        margin-bottom: 10px;
-    }
-
-    .slider{
-        height: 50vh;
-    }
-
-    .slider-content {
-        width: 50%;
-
-    }
-
-    .competances li {
-        font-size: 0.7rem;
-        text-wrap: balance;
-    }
-
-    .slider-content p {
-        margin-top: 20px;
-        font-size: 0.7rem;
-        text-wrap: balance;
-    }
-
-    .skill {
-        width: 47%; /* Deux éléments par ligne */
-        height: 100px;
-    }
-
-    .skill img {
-        max-width: 100px;
-    }
-
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-        margin-bottom: 30px;
-    }
-
-    h3{
-        font-size: 1.2rem;
-    }
-    p{
-        font-size: 1rem;
-        text-wrap: balance;
-    }
-
-    .toColumn {
-        flex-direction: column;
-    }
-    .mCenter {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .wm100 {
-        width:100% !important;
-        margin-top: 20px;
-    }
-
-    .wm47 {
-        width: 47%;
-    }
-
-    .section {
-        padding: 50px 0;
-    }
-
-    .boxed {
-        max-width: 90%;
-    }
-
-    .icon {
-        display: block;
-        font-size: 30px !important;
-    }
-    
-    .label {
-        display: block;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 10px;
-        font-size: 1.2rem;
-    }
-    
-    .value {
-        display: block;
-        font-size: 1rem;
-    }
-
-    .contact {
-        width: auto;
-    }
-
-  .modal-centered-fixed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: auto;
-    max-width: 100vw;
-    padding: 0;
-  }
-
-  .modal-centered-fixed .modal-content {
-    max-height: 90vh;
-  }
-
+.flou {
+    background: transparent;
+    filter: blur(5px);
+    border-radius: 8px;
 }
+
+/* ============ STYLES GALERIE ============*/
+#galerie {
+    max-height: 40vh;
+    width: 100vw;
+    padding: 20px;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-auto-rows: 150px;
+    gap: 5px;
+    height: 700px;
+    overflow-y: auto;
+    padding-right: 20px;
+    grid-auto-flow: dense;
+    border-radius: 10px;
+}
+
+#grid::-webkit-scrollbar {
+    background-color: #dedede;
+    width: 10px;
+}
+
+#grid::-webkit-scrollbar-thumb {
+    background-color: #757575;
+}
+
+.grid-item {
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#galerie video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#nature-2,
+#nature-7,
+#nature-16 {
+    grid-column: span 2;
+}
+
+#nature-4,
+#nature-5,
+#nature-10 {
+    grid-row: span 2;
+}
+
+#nature-13 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 2; 
+}
+
+/* ============ STYLES CENTRES INTERESSES ============ */
+
+.interest-thumb {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.interest-thumb:hover {
+    transform: scale(1.05);
+}
+
+/* Backdrop Bootstrap */
+.modal-backdrop {
+    z-index: -1;
+}
+
+/* Fenêtre du modal */
+.modal {
+    z-index: 1055;
+}
+

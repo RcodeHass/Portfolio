@@ -1,0 +1,38 @@
+.titre-real {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Backdrop Bootstrap */
+.modal-backdrop {
+    z-index: -1;
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa00;
+    color: #000;
+}
+
+.real-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-skill {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.list-skill li {
+    list-style:circle;
+    margin-bottom: 10px;
+}

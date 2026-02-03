@@ -1,274 +1,545 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../assets/images/main-images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script src="../js/lightbox-plus-jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles-realisation.css">
-    <link rel="stylesheet" href="../css/lightbox.min.css">
-    <title>Realisation</title>
-</head>
-<body>
-    <!-- Navigateur  -->
-    <nav class="navbar navbar-expand-md theme-color fixed-top z-4">
-        <div class="container-fluid">
-            <!-- Logo + Titre -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-            <img id="logo" src="../assets/images/main-images/logo.png" alt="Logo">
-            <h2 class="ms-2 mb-0 fs-3 text-black"><strong>Portfolio</strong></h2>
-            </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../assets/images/main-images/logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../css/realisation.css">
+        <link rel="stylesheet" href="../css/commun.css">
+        <title>Porfolio</title>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-md theme-color fixed-top z-4">
+            <div class="container-fluid">
+                <!-- Logo + Titre -->
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img id="logo" src="../assets/images/main-images/logo.png" alt="Logo">
+                <h2 class="ms-2 mb-0 fs-3 text-black"><strong>Portfolio</strong></h2>
+                </a>
 
-            <!-- Burger menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Burger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Menu principal -->
-            <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                <a class="nav-link text-black" href="../index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-black" href="./cv.html">CV</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-black" href="">Mes realisations</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link contact-btn text-black" href="#contact">Contact</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Contenue mes réalisations  -->
-    <div id="realisation" class="section dark">
-        <div class="boxed texte-center">
-            <h1 class="titre-real texte-center">Découvrez mes réalisations </h1>
-        </div>
-        <div id="realisation-1">
-            <h2 class="texte-center">Stage master 1:  </h2>
-            <div class="galerie">
-                <div id="glr_1" class="wrapper">
-                    <img id="left" class="fleche" src="../assets/images/main-images/prev.png" alt="fleche gauche">
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"> <img src="../assets/images/stage/stage_1.png" alt="carte" draggable = "false"></div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/stage/stage_2.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/stage/stage_3.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/stage/stage_4.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/stage/stage_5.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/stage/stage_6.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                    </ul>
-                    <img id="right" class="fleche" src="../assets/images/main-images/next.png" alt="">
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="./cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link contact-btn text-black" href="#contact">Contact</a>
+                    </li>
+                </ul>
                 </div>
             </div>
-            <div class="W40 wm100 boxed">
-                <p> Mon projet de stage a sans aucun doute été l'une des expériences les plus formatrices dans le domaine de la géomatique. Pendant cinq mois, du 1er mars au 31 juillet 2024, j’ai travaillé avec les archives municipales de Saint-Étienne et le laboratoire EVS sur la réalisation d'une cartographie web des équipements sportifs de la ville. L'objectif était de mettre en valeur les fonds historiques des équipements conservés par les archives municipales.</p>
-                <p> Ce stage m'a permis de mettre en pratique les compétences acquises lors de ma première année de master, notamment : </p>
-                <u class="list-skill">
-                    <li>Travail en autonomie</li>
-                    <li>Mise en place d'une stratégie de collecte de données</li>
-                    <li>Structuration d’une base de données</li>
-                    <li>Formalisation de processus de traitement </li>
-                    <li>Réalisation d’une cartographie web</li>
-                    <li>Préparation d’un rendu de projet</li>
-                </u>
+        </nav>
+        <!-- CONTENUE -->
+        <div class="container-fluid" id="fond">
+            <div class="boxed texte-center">
+                <h1 class="titre-real texte-center">Compétences acquises</h1>
             </div>
-            <div class="ligne"></div>
-        </div>
-        <div id="realisation-2">
-            <h2 class="texte-center">Projet FME:  </h2>
-            <div class="galerie">
-                <div id="glr_2" class="wrapper">
-                    <img id="left" class="fleche" src="../assets/images/main-images/prev.png" alt="fleche gauche">
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"> <img src="../assets/images//fme/fme_1.png" alt="carte" draggable = "false"></div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/fme/fme_2.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/fme/fme_3.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                    </ul>
-                    <img id="right" class="fleche" src="../assets/images/main-images/next.png" alt="">
-                </div>
-            </div>
-            <div class="W60 wm100 boxed">
-                <p> J’ai eu l’opportunité de travailler avec le logiciel FME (Feature Manipulation Engine) dans le cadre d'un projet mené en master 1 de géographie numérique. FME est un outil puissant d'ETL spatial, permettant de convertir, transformer et intégrer rapidement des données. Pour ce projet, j’ai développé une application qui met à jour une carte en ligne (ArcGIS Online) à partir de données issues d’une API.</p>
-                <p> Les compétences acquises lors de ce projet sont : </p>
-                <u class="list-skill">
-                    <li> Rédaction d’une notice technique destinée aux utilisateurs et administrateurs de l'application</li>
-                    <li>Création et mise à jour d’une cartographie en ligne</li>
-                    <li>Première expérience dans l’utilisation d'API</li>
-                </u>
-            </div>
-            <div class="ligne"></div>
-        </div>
 
-        <div id="realisation-3">
-            <h2 class="texte-center">Projet géomatique Chambre d’agriculture :  </h2>
-            <div class="galerie">
-                <div id="glr_3" class="wrapper">
-                    <img id="left" class="fleche" src="../assets/images/main-images/prev.png" alt="fleche gauche">
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"> <img src="../assets/images/chambre-agriculture/agri_1.png" alt="carte" draggable = "false"></div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/chambre-agriculture/agri_2.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/chambre-agriculture/agri_3.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/chambre-agriculture/agri_4.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/chambre-agriculture/agri_5.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                    </ul>
-                    <img id="right" class="fleche" src="../assets/images/main-images/next.png" alt="">
-                </div>
-            </div>
-            <div class="W60 wm100 boxed">
-                <p> Dans le cadre d’un projet mené avec la Chambre régionale d’agriculture Auvergne-Rhône-Alpes, mon groupe et moi avons été chargés de formaliser des données et de concevoir une maquette de carte en vue d’un futur stage. Ce projet portait sur la cartographie des outils et équipements de transformation agroalimentaire et de logistique présents en Auvergne-Rhône-Alpes.                </p>
-                <p> Grâce à ce projet, j’ai pu acquérir des compétences indispensables à la réussite d’un projet dans le domaine de la géomatique :</p>
-                <u class="list-skill">
-                    <li>Réalisation d'un état de l’art sur un sujet et proposition de solutions techniques répondant aux besoins du projet</li>
-                    <li>Organisation et conduite de réunions avec des intervenants externes</li>
-                    <li>Travail en équipe</li>
-                </u>
-            </div>
-            <div class="ligne"></div>
-        </div>
+            <!-- MES REALISATIONS -->
 
-        <div id="realisation-4">
-            <h2 class="texte-center">Analyse spatiale et Méthodes de représentation:  </h2>
-            <div class="galerie">
-                <div id="glr_4" class="wrapper">
-                    <img id="left" class="fleche" src="../assets/images/main-images/prev.png" alt="fleche gauche">
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"> <img src="../assets/images/analyse-spatial/as_1.png" alt="carte" draggable = "false"></div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/analyse-spatial/as_2.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/analyse-spatial/as_3.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/analyse-spatial/as_4.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                    </ul>
-                    <img id="right" class="fleche" src="../assets/images/main-images/next.png" alt="">
-                </div>
-            </div>
-            <div class="W60 wm100 boxed">
-                <p>Un des projets marquants sur lequel j’ai travaillé est l'analyse spatiale et ses applications. Ce projet consistait à réaliser une série de cartes basées sur différentes bases de données, avec pour objectif d'explorer toutes les méthodes de représentation des données dans l'espace. </p>
-                <p> Grâce à ce projet, j’ai pu acquérir des compétences indispensables à la réussite d’un projet dans le domaine de la géomatique :</p>
-                <u class="list-skill">
-                    <li>Collecte et traitement statistique des données</li>
-                    <li>Formalisation de la méthodologie de traitement</li>
-                    <li>Modes de représentation cartographique</li>
-                </u>
-                
-            </div>
-            <div class="ligne"></div>
-        </div>
+            <section id="experiences" class="py-1">
+                <div class="container">
+                    <!-- <h2 class="text-center mb-4">Expériences professionnelles</h2> -->
+                    <div class="accordion" id="accordionExperiences">
 
-        <div id="realisation-5">
-            <h2 class="texte-center">Étude d’impact :  </h2>
-            <div class="galerie">
-                <div id="glr_5" class="wrapper">
-                    <img id="left" class="fleche" src="../assets/images/main-images/prev.png" alt="fleche gauche">
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"> <img src="../assets/images/etude-impact/impact_1.png" alt="carte" draggable = "false"></div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/etude-impact/impact_2.JPG" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/etude-impact/impact_3.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/etude-impact/impact_4.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                        <li class="card">
-                            <div class="img"><img src="../assets/images/etude-impact/impact_5.png" alt="carte" draggable = "false"> </div>
-                        </li>
-                    </ul>
-                    <img id="right" class="fleche" src="../assets/images/main-images/next.png" alt="">
-                </div>
-            </div>
-            <div class="W60 wm100 boxed">
-                <p>Dans le cadre de mon projet de fin de licence en géographie et aménagement, j’ai réalisé une étude d’impact environnementale qui portait sur un projet d’extension d’un réseau de chauffage urbain dans la commune d’Épernay (Marne). </p>
-                <p> Ce projet individuel m’a permis de consolider mon expérience dans la structuration de projet et la rédaction de rapports : </p>
-                <u class="list-skill">
-                    <li>Collecte d’informations</li>
-                    <li>Cartographie d’un projet d’aménagement</li>
-                    <li>Analyse et critique d’un projet</li>
-                </u>
-            </div>
-            <div class="ligne"></div>
-        </div> 
+                        <!-- EXPÉRIENCE STAGE M2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp6-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp6">
+                                    <h5 class="mb-0">L’accès à l’information géographique - [Stage de Master 2]</h5>
+                                </button>
+                            </h2>
+                            <div id="exp6"
+                                class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
 
-    </div> 
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="">
+                                                            <p class="mb-0">
+                                                                Lors de ce second stage de six mois, réalisé au sein de la CCML (Communauté de communes), 
+                                                                j’ai intégré le service SIG afin d’accompagner le responsable SIG dans le cadre du processus continu d’amélioration du système d’information géographique. 
+                                                                Depuis 2020, la collectivité est engagée dans une transition majeure de son SIG vers une base de données PostgreSQL associée à un WebSIG. <br>
+                                                                <br> Ce stage, qui conclut mon cursus en Master de Géographie Numérique, m’a permis d’acquérir une expérience concrète et professionnalisante sur l’ensemble de la chaîne SIG, 
+                                                                de l’administration des données à l’accompagnement des utilisateurs.
+                                                            </p>
+                                                            <a href="../assets/docs/2025_Rapport-stage_hassani.pdf">Mon rapport de stage</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-    <!-- Bas de page les contact  -->
-    <div id="contact" class="section dark">
-        <div class="boxed texte-center contact-align ">
-            <h2>Contact</h2>
-            <div class=" flex contact-align toColumn gap20">
-                <div class="space-between ">
-                    <div class="w32  contact" >
-                        <span class="material-symbols-outlined icon">mail</span>
-                        <span class="label"> E-mail</span>
-                        <span class="value"> h.ridjali@univ-lyon2.fr</span>
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselStageM2Inner"></div>
+
+                                                    </div>
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 py-1 border rounded">
+                                                    <h5 class="mb-3">Liste des compétences acquises</h5>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Administration d’une base de données SIG au sein d’une collectivité territoriale</li>
+                                                        <li class="list-group-item">Réalisation d’un état des lieux d’un SIG et force de proposition pour son évolution</li>
+                                                        <li class="list-group-item">Proposition et mise en œuvre d’améliorations d'un SIG</li>
+                                                        <li class="list-group-item">Accompagnement et formation d’utilisateurs non familiers aux metiers de la géomatique</li>
+                                                        <li class="list-group-item">Modélisation et mise en production de processus d’automatisation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EXPÉRIENCE STAGE M1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp4-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp4">
+                                    <h5>Cartographie interactive et WebSIG - [Stage – Master 1]</h5>
+                                </button>
+                            </h2>
+                            <div id="exp4"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
+
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="">
+                                                            <p class="mb-0">
+                                                                Mon projet de stage a sans aucun doute été l'une des expériences les plus formatrices dans le domaine de la géomatique. 
+                                                                Pendant cinq mois, du 1er mars au 31 juillet 2024, j’ai travaillé avec les archives municipales de Saint-Étienne 
+                                                                et le laboratoire EVS sur la réalisation d'une cartographie web des équipements sportifs de la ville. 
+                                                                L'objectif était de mettre en valeur les fonds historiques des équipements conservés par les archives municipales. <br>
+                                                                
+                                                                <br> Durant ce stage, j’ai travaillé sur la conception
+                                                                d’une cartographie web interactive des équipements sportifs
+                                                                de la ville de Saint-Étienne, en collaboration avec les archives
+                                                                municipales et le laboratoire EVS.
+                                                            </p>
+                                                            <a href="https://rcodehass.github.io/Carte_equipements_sportifs_st/">Lien vers le projet</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselCompetencesInner"></div>
+
+                                                    </div>
+
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 py-1 border rounded">
+                                                    <h5 class="mb-3">Liste des compétences acquises</h5>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Travail en autonomie</li>
+                                                        <li class="list-group-item">Structuration de bases de données</li>
+                                                        <li class="list-group-item">Formalisation de processus</li>
+                                                        <li class="list-group-item">Cartographie web</li>
+                                                        <li class="list-group-item">Restitution et valorisation de données</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2025 PROJET FME -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp5-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp5">
+                                    <h5> Projet FME, automatisation de processus cartographiques</h5>
+                                </button>
+                            </h2>
+                            <div id="exp5"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
+
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="">
+                                                            <p class="mb-0">
+                                                                J’ai eu l’opportunité de travailler avec le logiciel FME (Feature Manipulation Engine) 
+                                                                dans le cadre d’un projet mené en Master 1 de Géographie Numérique. 
+                                                                FME est un outil puissant d’ETL spatial permettant de convertir, 
+                                                                transformer et intégrer rapidement des données géographiques. <br>
+                                                                <br> Dans ce projet, j’ai développé une application automatisée permettant la mise à jour d’une carte en ligne sur ArcGIS Online à partir de données issues d’une API.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselFmeInner"></div>
+
+                                                    </div>
+
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 border rounded py-1">
+                                                    <h4 class="mb-3">Liste des compétences acquises</h4>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Rédaction d’une notice technique à destination des utilisateurs et administrateurs de l’application</li>
+                                                        <li class="list-group-item">Création et mise à jour de cartographies en ligne</li>
+                                                        <li class="list-group-item">Première expérience dans l’utilisation et l’exploitation d’AP</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2024- CHAMBRE AGRICULTURE -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp3-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp3">
+                                    <h5>Chambre d’agriculture - [Projet géomatique]</h5>
+                                </button>
+                            </h2>
+                            <div id="exp3"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
+
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="p-4">
+                                                            <p class="mb-0">
+                                                                Dans le cadre d’un projet mené avec la Chambre régionale d’agriculture Auvergne-Rhône-Alpes, 
+                                                                mon groupe et moi avons été chargés de formaliser 
+                                                                des données et de concevoir une maquette cartographique en vue d’un futur stage. <br>
+                                                                Le projet portait sur la cartographie des outils et 
+                                                                équipements de transformation agroalimentaire et de logistique présents en région Auvergne-Rhône-Alpes.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselAgricultureInner"></div>
+
+                                                    </div>
+
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 border rounded py-1">
+                                                    <h4 class="mb-3">Liste des compétences acquises</h4>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Réalisation d’un état de l’art et proposition de solutions techniques adaptées aux besoins du projet</li>
+                                                        <li class="list-group-item">Organisation et animation de réunions avec des intervenants externes</li>
+                                                        <li class="list-group-item">Travail en équipe et coordination de projet</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2024 ANALYSE SPATIALE -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp2-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp2">
+                                    <h5>Cartographie et Analyse spatial</h5>
+                                </button>
+                            </h2>
+                            <div id="exp2"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
+
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="p-4">
+                                                            <p class="mb-0">
+                                                                Un des projets marquants de mon parcours a porté sur l’analyse spatiale et ses applications. 
+                                                                Il consistait à produire une série de cartes à partir de différentes bases de données, 
+                                                                avec pour objectif d’explorer et de comparer les méthodes de représentation 
+                                                                des phénomènes dans l’espace.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselAnalyseInner"></div>
+
+                                                    </div>
+
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 border rounded py-1">
+                                                    <h4 class="mb-3">Liste des compétences acquises</h4>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Travail en autonomie</li>
+                                                        <li class="list-group-item">Travail en équipe</li>
+                                                        <li class="list-group-item">Structuration de bases de données</li>
+                                                        <li class="list-group-item">Formalisation de processus</li>
+                                                        <li class="list-group-item">Cartographie web</li>
+                                                        <li class="list-group-item">Restitution et valorisation de données</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2022-2023 ETUDE D'IMPACT -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="exp1-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#exp1">
+                                    <h5>Etude d'impact – [Licence géographie  et aménagement 2022-2023]</h5> 
+                                </button>
+                            </h2>
+                            <div id="exp1"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiences">
+                                <div class="accordion-body">
+                                    <section id="competences">
+                                        <div class="container">
+                                            <div class="row align-items-start g-4">
+
+                                                <!-- Texte explicatif -->
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <div class="p-4">
+                                                            <p class="mb-0">
+                                                                Dans le cadre de mon projet de fin de licence en Géographie et Aménagement, 
+                                                                j’ai réalisé une étude d’impact environnemental portant sur un projet d’extension 
+                                                                d’un réseau de chauffage urbain dans la commune d’Épernay (Marne).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Colonne gauche : Carousel -->
+                                                <div class="col-lg-6 text-center">
+                                                    <div id="carouselCompetences"
+                                                        class="carousel slide shadow"
+                                                        data-bs-ride="carousel"
+                                                        data-bs-interval="3000"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalCompetences"
+                                                        style="cursor:pointer;">
+                                                        <div class="carousel-inner" id="carouselEtudeImpactInner"></div>
+
+                                                    </div>
+
+                                                    <small class="text-muted d-block mt-2">
+                                                        Cliquer pour agrandir
+                                                    </small>
+                                                </div>
+
+                                                <!-- Colonne droite : Compétences -->
+                                                <div class="col-lg-6 border rounded py-1">
+                                                    <h4 class="mb-3">Liste des compétences acquises</h4>
+                                                    <ul class="list-skill">
+                                                        <li class="list-group-item">Collecte et analyse d’informations territoriales</li>
+                                                        <li class="list-group-item">Cartographie d’un projet d’aménagement</li>
+                                                        <li class="list-group-item">Analyse critique et évaluation des impacts d’un projet</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-    
-                <div class="space-between">
-                    <div class="w32  contact" >
-                        <span class="material-symbols-outlined icon "> nest_heat_link_gen_3</span>
-                        <span class="label"> <a href="https://www.linkedin.com/in/hassani-ridjali-a79374268/">LinkedIn</a> </span>
-                        <span class="value"> RIDJALI hassani</span>
+            </section>
+
+        </div>
+
+        <!-- BAS DE PAGE -->
+        <footer id="contact" class="bg-dark text-light py-4 mt-5">
+            <div class="container">
+                <div class="row text-center text-md-start align-items-center">
+
+                <!-- Logo -->
+                <div class="col-md-3 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                    <img src="../assets/images/main-images/logo.png"
+                        alt="Logo"
+                        class="footer-logo">
+                </div>
+
+                <!-- Informations -->
+                <div class="col-md-6">
+                    <div class="row justify-content-center justify-content-md-start">
+                    <!-- Adresse -->
+                    <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                        <i class="bi bi-geo-alt fs-3"></i>
+                        <div>
+                            <div class="text-uppercase small fw-semibold">Adresse</div>
+                            <div class="text-secondary small">
+                                Rue du 8 Mai Feurs 42110
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Séparateur -->
+                    <div class="d-none d-md-block col-md-1 text-center">
+                        <div class="vr bg-secondary opacity-50"></div>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                        <i class="bi bi-telephone fs-3"></i>
+                        <div>
+                            <div class="text-uppercase small fw-semibold">Téléphone</div>
+                            <a href="tel:0558719930" class="text-secondary small text-decoration-none">
+                                0698929055
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur -->
+                    <div class="d-none d-md-block col-md-1 text-center">
+                        <div class="vr bg-secondary opacity-50"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                        <i class="bi bi-envelope fs-3"></i>
+                        <div>
+                            <div class="text-uppercase small fw-semibold">E-mail</div>
+                            <a href="mailto:contact@sarrade-construction.com"
+                            class="text-secondary small text-decoration-none">
+                                hassani9@live.fr
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        
-    </div>
-    
-    <script src="../js/realisation.js" defer></script>
-    <script src="../js/lightbox.js"></script>
-    
-        
-<!-- footer -->
-</body>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+    </body>
 </html>
-
-

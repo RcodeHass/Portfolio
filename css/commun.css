@@ -1,0 +1,131 @@
+/* ============ STYES GENERALE ============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@media(prefers-color-scheme: dark) {
+    body {
+        background: #000;
+        color: #FFF;
+        font-family: "Inter", sans-serif;
+    }
+
+    *{
+    margin: 0;
+    padding: 0;
+}
+}
+
+#fond::before {
+    pointer-events: none;
+}
+
+
+/* ============ STYLES DE LA NAVIGATION ============ */
+.theme-color {
+  background-color: rgb(255, 255, 255);
+}
+
+#logo {
+  height: 5vh;
+  border-radius: 50%;
+}
+
+nav.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: #f2f1f1;
+  padding: 10px 20px;
+  transition: 0.2s ease;
+  font-size: larger;
+}
+
+.navbar-brand h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    width: 60px;
+}
+
+.navbar-nav .nav-link {
+  transition: color 2s ease;
+}
+
+.navbar-nav .nav-link:not(.contact-btn):hover {
+  color: #000 !important;
+  background-color: #3333;
+  border-radius: 8px;
+}
+
+.contact-btn:hover {
+  border-radius: 8px;
+}
+
+.contact-btn {
+  background-color: rgb(72, 139, 72);
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: none;
+}
+
+/* ============ FOND PAGE ============ */
+#fond {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+}
+
+#fond::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/main-images/font_portfolio.png)
+                no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.20; /* 10% */
+    z-index: -1;
+    pointer-events: none;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dark {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+
+/* ============ STYLES FOOTER ============ */
+footer {
+    background: linear-gradient(180deg, #1c1c1c, #111);
+}
+
+.footer-logo {
+    max-height: 100px;
+    width: auto;
+}
