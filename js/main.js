@@ -7,10 +7,6 @@ const competencesmasterstage2 = [
     "../assets/images/stage_m2/stg_m2_6.png"
 ];
 
-
-
-
-
 const competencesImages = [
     "../assets/images/stage_m1/stage_1.png",
     "../assets/images/stage_m1/stage_2.png",
@@ -51,6 +47,12 @@ const exp_etude_impact = [
 
 function buildCarousel(images, containerId) {
     const container = document.getElementById(containerId);
+
+    if (!container) {
+        console.warn(`Container introuvable : ${containerId}`);
+        return;
+    }
+
     container.innerHTML = "";
 
     images.forEach((src, index) => {
@@ -64,6 +66,7 @@ function buildCarousel(images, containerId) {
         container.appendChild(item);
     });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
 

@@ -36,3 +36,17 @@
     list-style:circle;
     margin-bottom: 10px;
 }
+
+.carousel-fixed {
+    height: 320px; /* ajuste selon ton design */
+}
+
+.carousel-fixed .carousel-item,
+.carousel-fixed img {
+    height: 100%;
+}
+
+.carousel-fixed img {
+    object-fit: cover;     /* remplit sans déformer */
+    object-position: center;
+}

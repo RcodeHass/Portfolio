@@ -53,33 +53,23 @@ h1 {
 
 .competances{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     list-style: none;
     margin-top: 10px;
 }
 
-.competances a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    box-sizing: border-box;
-    transition: .2s ease;
-    padding: 5px;
-    padding-right: 5px;
-    
-}
 
 .competances li {
     background-color: green;
     color: #FFF;
     border-radius: 10px;
     margin-right: 10px;
-}
-
-.flou {
-    background: transparent;
-    filter: blur(5px);
-    border-radius: 8px;
+    text-decoration: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    padding: 5px;
+    display: block;
+    text-size-adjust: 1rem;
 }
 
 /* ============ STYLES GALERIE ============*/
@@ -95,12 +85,11 @@ h1 {
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); */
     grid-auto-rows: 150px;
     gap: 5px;
     height: 700px;
-    overflow-y: auto;
-    padding-right: 20px;
+    overflow-y: hidden;
     grid-auto-flow: dense;
     border-radius: 10px;
 }
