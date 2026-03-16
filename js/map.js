@@ -10,6 +10,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 const lieux = {
+  'exp-ccmdl': {
+    coords: [45.632122, 4.454904],
+    label: 'Communauté de communes de Mont-du-Lyon',
+    type: 'experience'
+  },
   'exp-archives': {
     coords: [45.421834, 4.410939],
     label: 'Archives municipales de Saint-Étienne',
@@ -70,6 +75,10 @@ function centrerCarte(idLieu) {
   const lieu = lieux[idLieu];
   if (lieu && lieu.coords) {
     map.setView(lieu.coords, 13, { animate: true });
+    L.popup()
+      .setLatLng(lieu.coords)
+      .setContent(lieu.label)
+      .openOn(map);
   }
 }
 
