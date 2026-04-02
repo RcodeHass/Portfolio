@@ -12,7 +12,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const lieux = {
   'exp-ccmdl': {
     coords: [45.632122, 4.454904],
-    label: 'Communauté de communes de Mont-du-Lyon',
+    label: 'Communauté de communes du Mont-du-Lyon',
     type: 'experience'
   },
   'exp-archives': {
@@ -52,33 +52,49 @@ const lieux = {
   }
 };
 
-const formationIcon = L.icon({
-  iconUrl: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/mortarboard-fill.svg',
-  iconSize: [20, 20]
+const formationIcon = L.divIcon({
+  className: 'custom-icon formation',
+  html: '<i class="fas fa-graduation-cap"></i>',
+  iconSize: [30, 30],
+  iconAnchor: [15, 30]
 });
 
-const experienceIcon = L.icon({
-  iconUrl: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/briefcase-fill.svg',
-  iconSize: [20, 20]
+const experienceIcon = L.divIcon({
+  className: 'custom-icon experience',
+  html: '<i class="fas fa-briefcase"></i>',
+  iconSize: [30, 30],
+  iconAnchor: [15, 30]
 });
 
 // Ajout des marqueurs
+const markers = {}; // stocker les marqueurs
+
 Object.entries(lieux).forEach(([id, lieu]) => {
   const icon = lieu.type === 'formation' ? formationIcon : experienceIcon;
 
-  L.marker(lieu.coords, { icon }).addTo(map)
-    .bindPopup(lieu.label);
+  const marker = L.marker(lieu.coords, { icon })
+    .addTo(map)
+    .bindPopup(`<strong>${lieu.label}</strong>`,
+      {
+        offset: [0, -25],
+      }
+    );
+
+  markers[id] = marker; // on stocke
 });
 
 
 function centrerCarte(idLieu) {
-  const lieu = lieux[idLieu];
-  if (lieu && lieu.coords) {
-    map.setView(lieu.coords, 13, { animate: true });
-    L.popup()
-      .setLatLng(lieu.coords)
-      .setContent(lieu.label)
-      .openOn(map);
+  const marker = markers[idLieu];
+
+  if (marker) {
+    map.flyTo(marker.getLatLng(), 13, {
+      duration: 1.5
+    });
+
+    setTimeout(() => {
+      marker.openPopup();
+    }, 500);
   }
 }
 
@@ -86,9 +102,22 @@ function centrerCarte(idLieu) {
 // Ajout des écouteurs d'événements sur les blocs
 Object.keys(lieux).forEach(id => {
   const element = document.getElementById(id);
+
   if (element) {
-    element.style.cursor = "pointer"; // pour signaler l’interactivité
-    element.addEventListener('click', () => centrerCarte(id));
+    element.style.cursor = "pointer";
+
+    element.addEventListener('click', () => {
+
+      // reset
+      document.querySelectorAll('.highlight').forEach(el => {
+        el.classList.remove('highlight');
+      });
+
+      // highlight
+      element.classList.add('highlight');
+
+      centrerCarte(id);
+    });
   }
 });
 
@@ -97,10 +126,23 @@ const legend = L.control({ position: "bottomright" });
 
 legend.onAdd = function () {
   const div = L.DomUtil.create("div", "info legend");
+
   div.innerHTML = `
-    <p><i class="bi bi-briefcase-fill" style="color:#007bff"></i> Expérience professionnelle</p>
-    <p><i class="bi bi-mortarboard-fill" style="color:#28a745"></i> Formation</p>
+    <div class="legend-item">
+      <div class="custom-icon experience">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <span style="color: #2c2c2c";><strong>Expérience professionnelle </strong></span>
+    </div>
+
+    <div class="legend-item">
+      <div class="custom-icon formation">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <span style="color: #2c2c2c";><strong>Formation</strong></span>
+    </div>
   `;
+
   return div;
 };
 legend.addTo(map);

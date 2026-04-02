@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="../assets/images/main-images/logo.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link rel="stylesheet" href="../css/style-cv.css">
         <link rel="stylesheet" href="../css/commun.css">
@@ -49,41 +50,112 @@
         <!-- CONTENUE -->
         <div class="container-fluid " id="fond">
             <div id="slider-image" class="cv container rounded">
+
                 <!-- CONTENUE GAUCHE DU CV -->
                 <div class="left">
                     <h1 style=" font-weight: 800;">Hassani<br><strong>RIDJALI</strong></h1>
                     <p style="  font-size: 1.5rem; font-weight: 800;"><strong>26 ans</strong></p>
                     <div class="info-title">MON PROFIL</div>
 
-                    <h2>CONTACT</h2>
+                    <!-- CONTACT -->
                     <div class="">
-                        <p><i class="fas fa-envelope"></i> hassani9@live.fr</p>
-                        <p><i class="fas fa-location-dot"></i> Rue du 8 Mai Feurs (42110)</p>
-                        <p><i class="fas fa-id-card"></i> Permis B (2018)</p>
+                        <h2>CONTACT</h2>
+                        <ul class="contact">
+                            <li><i class="fas fa-envelope"></i> hassani9@live.fr</li>
+                            <li><i class="fas fa-location-dot"></i> Feurs (42110)</li>
+                            <li><i class="fas fa-id-card"></i> Permis B</li>
+                            <li><i class="fas fa-globe"></i> codehass.github.io</li>
+                        </ul>
                     </div>
 
                     <h2>COMPÉTENCES</h2>
                     <div class="competences">
-                        <p><strong>Logiciels SIG :</strong><br>QGIS, ArcGIS, ENVI, PostgreSQL</p>
-                        <p><strong>Langages :</strong><br>Python, SQL, VBA, R, HTML, Javascript</p>
-                        <p><strong>Bureautique :</strong><br>Word, Excel (C2i)</p>
-                        <p><strong>Autres :</strong><br>AutoCAD, SketchUp, Illustrator</p>
-                    </div>
-                    <h2>LANGUES</h2>
-                    <p>Anglais : Niveau C1</p>
 
-                    <h2>Centre d’intérêt</h2>
+                        <!-- SIG -->
+                        <h3>Logiciels SIG</h3>
+                        <div class="skill">
+                            <span>QGIS / ArcGIS</span>
+                            <div class="bar"><div class="level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>PostgreSQL / PostGIS</span>
+                            <div class="bar"><div class="level" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>FME</span>
+                            <div class="bar"><div class="level" style="width: 56%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>ENVI</span>
+                            <div class="bar"><div class="level" style="width: 40%"></div></div>
+                        </div>
+
+                        <!-- DEV -->
+                        <h3>Programmation</h3>
+                        <div class="skill">
+                            <span>HTML / CSS / JS</span>
+                            <div class="bar"><div class="level" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>SQL</span>
+                            <div class="bar"><div class="level" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="bar"><div class="level" style="width: 35%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>R</span>
+                            <div class="bar"><div class="level" style="width: 35%"></div></div>
+                        </div>
+
+                        <!-- AUTRES -->
+                        <h3>Bureautique</h3>
+                        <ul><li>Pack Office (C2i)</li></ul>
+
+                        <h3>Autres logiciels</h3>
+                        <ul><li>AutoCAD, SketchUp, Illustrator, GitHub</li></ul>
+
+                    </div>
+
+                    <!-- LANGUES -->
+                    <h2>LANGUES</h2>
+                    <ul>
+                        <li>Français : courant</li>
+                        <li>Anglais : C1</li>
+                        <li>Shibouchi : langue maternelle</li>
+                    </ul>
+
+                    <!-- CENTRES D'INTÉRÊT -->
+                    <h2>CENTRES D’INTÉRÊT</h2>
                     <ul>
                         <li>Dessin numérique</li>
                         <li>Modélisation 3D</li>
                         <li>Cartographie</li>
                         <li>Mécanique / électronique</li>
                     </ul>
+
+                    <!-- EXPORT -->
+                    <!-- <div id="export_cv">
+                        <button class="btn-export">Exporter CV</button>
+                    </div> -->
                 </div>
 
                 <!-- CONTENUE DROIT DU CV -->
                 <div class="right">
                     <div id="titre-carte" class="info-title"> MON PARCOURS</div>
+
+                    <h2>OBJECTIFS PROFESSIONNELS</h2>
+                    <div>
+                        <p>
+                            Passionné par les outils numériques, je me spécialise en 
+                            géomatique dans le cadre d’un Master 2 en Géographie 
+                            Numérique. Aspirant a devenir un géomaticient a part 
+                            entrier, je m’intéresse particulièrement à la modélisation 
+                            informatique, à la gestion de donnée, à l’élaboration de 
+                            projets en lien avec l'aménagement du territoire.
+                        </p>
+                    </div>
 
                     <h2>LIEUX</h2>
                     <div>
@@ -151,7 +223,11 @@
                         </ul>    
                     </a>
                 </div>
+                <div class="copiright ">
+                    <p style="margin-bottom: 0; font-size: 0.8rem;">© 2026 Hassani Ridjali</p>
+                </div>
             </div>
+
 
 
         </div>

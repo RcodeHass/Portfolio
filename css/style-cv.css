@@ -1,6 +1,5 @@
 
 /* CSS Slider */
-
 #slider-image{
     margin-top: 10vh;
     margin-bottom: 5vh;
@@ -14,6 +13,54 @@
     box-sizing: 5px;
 }
 
+.custom-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.custom-icon i {
+    font-size: 14px;
+}
+
+.custom-icon.formation i {
+    color: #28a745;
+}
+
+.custom-icon.experience i {
+    color: #007bff;
+}
+
+.highlight {
+    border-left: 4px solid #007bff;
+    background: rgba(0,123,255,0.1);
+    transition: 0.3s;
+}
+
+.legend {
+    background: rgba(241, 241, 241, 0.726);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-size: 0.85rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.legend .custom-icon {
+    width: 20px;
+    height: 20px;
+}
 
 :root .cv {
     --primary: #03642ea8;
@@ -39,11 +86,12 @@ body {
 .left {
     background: #94b894;
     width: 35%;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     border-right: 2px solid #ccc;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    position: relative;
 }
 .right {
     width: 65%;
@@ -102,10 +150,7 @@ h1 {
     margin-top: 5px;
     box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.6);
 }
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
+
 .job-title {
     font-weight: bold;
     color: var(--primary);
@@ -127,7 +172,92 @@ ul {
   transition: background-color 0.3s ease;
 }
 
+/* PARTIE CV  */
 
+/* .contact i {
+    width: 20px;
+    margin-right: 8px;
+    color: #5a9bb5;
+}
+
+.competences ul {
+    margin-left: 0 important;
+}
+
+.competences p {
+    margin-bottom: 0 important;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    background: #8fbcd4;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill span {
+    font-size: 0.9rem;
+}
+
+.bar {
+    height: 6px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.level {
+    height: 100%;
+    background: linear-gradient(to right, orange, green);
+    border-radius: 10px;
+}
+
+.btn-export {
+    width: 85%;
+    padding: 8px;
+    background: #bd674d;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 8px;
+    bottom: 15px;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.6);
+} */
+
+.copiright {
+    position: absolute;
+    bottom: 0px;
+    width: 98%;
+    height: 18px;
+    background-color: rgb(173, 171, 171);
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
   body, p, li, h1, h2, h3 {
     font-size: 0.85rem !important;
@@ -149,5 +279,9 @@ ul {
 
   .info-title {
     font-size: 1rem;
+  }
+
+  .copiright {
+    display: none;
   }
 }
