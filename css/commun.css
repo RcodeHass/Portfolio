@@ -81,7 +81,36 @@ nav.navbar a {
   font-weight: 500;
   transition: none;
 }
+.nav-link {
+    position: relative;
+    transition: 0.3s;
+}
 
+/* Trait invisible par défaut */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color:rgb(72, 139, 72);
+    transition: 0.3s;
+}
+
+/* Hover (effet sympa) */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Page active */
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
 /* ============ FOND PAGE ============ */
 #fond {
     position: relative;

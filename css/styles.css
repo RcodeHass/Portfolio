@@ -171,3 +171,40 @@ h1 {
     z-index: 1055;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .cv {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .info-title {
+    font-size: 1rem;
+  }
+
+  .copiright {
+    display: none;
+  }
+
+  .competances {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .competances li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
