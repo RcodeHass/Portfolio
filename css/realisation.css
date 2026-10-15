@@ -12,10 +12,11 @@
 
 .accordion-button {
     font-weight: 600;
+    background-color: #488b4854;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #f8f9fa00;
+    background-color: #488b4880;
     color: #000;
 }
 
@@ -38,15 +39,33 @@
 }
 
 .carousel-fixed {
-    height: 320px; /* ajuste selon ton design */
+    height: 330px; /* ajuste selon ton design */
+    overflow: hidden;
 }
 
-.carousel-fixed .carousel-item,
-.carousel-fixed img {
+.carousel-fixed .carousel-inner {
     height: 100%;
 }
 
-.carousel-fixed img {
+.carousel-fixed .carousel-item,
+.carousel-fixed .carousel-item img {
+    height: 100%;
+}
+
+.carousel-fixed .carousel-item img {
     object-fit: cover;     /* remplit sans déformer */
     object-position: center;
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .carousel-fixed {
+        height: 260px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-fixed {
+        height: 200px;
+    }
 }

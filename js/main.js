@@ -1,3 +1,10 @@
+const competencesmission_ep = [
+    "../assets/images/mission_ep/ep_ccmdl_1.png",
+    "../assets/images/mission_ep/ep_ccmdl_2.png",
+    "../assets/images/mission_ep/ep_ccmdl_3.png",
+    "../assets/images/mission_ep/ep_ccmdl_4.png",
+    "../assets/images/mission_ep/ep_ccmdl_5.png",
+];
 const competencesmasterstage2 = [
     "../assets/images/stage_m2/stg_m2_1.png",
     "../assets/images/stage_m2/stg_m2_2.png",
@@ -45,6 +52,12 @@ const exp_etude_impact = [
     "../assets/images/etude-impact/impact_5.png"
 ];
 
+// Construit un texte alternatif lisible à partir du nom de fichier
+function altFromSrc(src) {
+    const file = src.split("/").pop().replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ");
+    return file;
+}
+
 function buildCarousel(images, containerId) {
     const container = document.getElementById(containerId);
 
@@ -60,7 +73,7 @@ function buildCarousel(images, containerId) {
         item.className = "carousel-item" + (index === 0 ? " active" : "");
 
         item.innerHTML = `
-            <img src="${src}" class="d-block w-100 rounded" loading="lazy">
+            <img src="${src}" class="d-block w-100 rounded" loading="lazy" alt="${altFromSrc(src)}">
         `;
 
         container.appendChild(item);
@@ -68,23 +81,73 @@ function buildCarousel(images, containerId) {
 }
 
 
+// Remplit le carousel du modal partagé à partir du carousel cliqué
+function setupModalCarousel() {
+    const modalElement = document.getElementById("modalCompetences");
+
+    if (!modalElement) {
+        return;
+    }
+
+    modalElement.addEventListener("show.bs.modal", (event) => {
+        const trigger = event.relatedTarget;
+
+        if (!trigger) {
+            return;
+        }
+
+        // Récupère les images du carousel qui a déclenché le modal
+        const images = trigger.querySelectorAll(".carousel-item img");
+        const inner = document.getElementById("carouselModalCompetencesInner");
+
+        if (inner) {
+            inner.innerHTML = "";
+
+            images.forEach((img, index) => {
+                const item = document.createElement("div");
+                item.className = "carousel-item" + (index === 0 ? " active" : "");
+
+                const src = img.getAttribute("src");
+                const alt = img.alt || altFromSrc(src);
+
+                item.innerHTML = `
+                    <img src="${src}" class="d-block w-100 rounded" alt="${alt}">
+                `;
+
+                inner.appendChild(item);
+            });
+        }
+
+        // Titre repris depuis l'accordéon parent
+        const accordionItem = trigger.closest(".accordion-item");
+        const titleElement = accordionItem
+            ? accordionItem.querySelector(".accordion-button h5, .accordion-button h4")
+            : null;
+        const title = titleElement ? titleElement.textContent.trim() : "";
+
+        const modalTitle = document.getElementById("modalCompetencesTitle");
+        if (modalTitle) {
+            modalTitle.textContent = title || "Aperçu";
+        }
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
+    buildCarousel(competencesmission_ep, "carouselmission_epInner");
+
     buildCarousel(competencesmasterstage2, "carouselStageM2Inner");
-    // buildCarousel(competencesmasterstage2, "carouselStageM2ModalInner");
 
     buildCarousel(competencesFme, "carouselFmeInner");
-    // buildCarousel(competencesFme, "carouselFmeModalInner");
-    
+
     buildCarousel(competencesAgriculture, "carouselAgricultureInner");
-    // buildCarousel(competencesAgriculture, "carouselAgricultureModalInner");
 
     buildCarousel(competencesAnalyse, "carouselAnalyseInner");
-    // buildCarousel(competencesAnalyse, "carouselAnalyseModalInner");
 
     buildCarousel(competencesImages, "carouselCompetencesInner");
-    // buildCarousel(competencesImages, "carouselCompetencesModalInner");
 
     buildCarousel(exp_etude_impact, "carouselEtudeImpactInner");
-    // buildCarousel(exp_etude_impact, "carouselEtudeImpactModalInner");
+
+    setupModalCarousel();
 });

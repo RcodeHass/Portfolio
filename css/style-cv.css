@@ -40,6 +40,7 @@
     border-left: 4px solid #007bff;
     background: rgba(0,123,255,0.1);
     transition: 0.3s;
+    padding-left: 5px;
 }
 
 .legend {
@@ -77,11 +78,14 @@ body {
 
 .cv {
     display: flex;
+    flex-wrap: wrap;
     max-width: 900px;
     margin: 30px auto;
     background: var(--bg);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 0px;
+    overflow: hidden;
+    position: relative;
 }
 .left {
     background: #94b894;
@@ -90,7 +94,6 @@ body {
     box-sizing: border-box;
     border-right: 2px solid #ccc;
     border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
     position: relative;
 }
 .right {
@@ -247,10 +250,10 @@ h3 {
 } */
 
 .copiright {
-    position: absolute;
-    bottom: 0px;
-    width: 98%;
-    height: 18px;
+    flex-basis: 100%;
+    width: 100%;
+    padding: 4px 0;
+    box-sizing: border-box;
     background-color: rgba(173, 171, 171, 0.692);
     text-align: center;
     color: #fff;
